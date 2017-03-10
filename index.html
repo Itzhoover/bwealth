@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ponzi - Scheme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+    <div id="pageWrapper">
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">BONDWEALTH</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#how">How It Works</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#packages">Packages</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        <div class="signinContain" >
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="panel-title">Sign In</div>
+                                <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#" class="launch-modal" data-modal-id="modal-forgot">Forgot password?</a></div>
+                            </div>     
+
+                        <div style="padding-top:30px" class="panel-body">
+                            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>                         
+                                <form id="loginform" class="form-horizontal" role="form"> 
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Email">                                        
+                                    </div>
+                                    
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <div class="checkbox">
+                                            <label><input id="login-remember" type="checkbox" name="remember" value="1"> Remember me</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div style="margin-top:10px" class="form-group">
+                                        <div class="col-sm-12 controls">
+                                            <a id="btn-login" href="#" class="btn btn-success">Login</a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 control">
+                                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >Don't have an account! 
+                                                <!--<a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">Sign Up Here</a>-->
+                                                <a href="" class="launch-modal" data-modal-id="modal-signup">Sign Up Here</a>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </form>     
+                            </div>                     
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div><!-- End of signinContain-->
+        <div class="clearfix"></div>
+
+        <div id="registerContain">
+            <div class="modal fade" id="modal-signup">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="container">
+                                <div class="row main">
+                                    <div class="main-login main-center" style="width: 100%; max-width: 550px">
+                                    
+                                        <form class="" method="post" action="#">
+                                            
+                                            <div class="form-group">
+                                                <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                                                <div class="cols-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                                                <div class="cols-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="username" class="cols-sm-2 control-label">Username</label>
+                                                <div class="cols-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="password" class="cols-sm-2 control-label">Password</label>
+                                                <div class="cols-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                        <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                                                <div class="cols-sm-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                        <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group ">
+                                                <a href="" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div> <!-- End of registerContain-->
+
+        <div id="passforgot">
+            <div class="modal fade" id="modal-forgot">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="form-group">
+                                <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                                <div class="cols-sm-10">
+                                   <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+						</div>
+					</div>
+				</div>
+			</div>
+        </div> <!-- End of passforgot -->
+
+        <div id="mid-content">
+            <div id="about">
+                <div id="about-contain">
+                    <h3 class="mid-title">ABOUT BONDWEALTH</h3>
+                    <br>
+                    <p>BondWealth is a Wealth Creation Platform, it aims to eradicate poverty and empower its members.</p>
+                </div>
+            </div>
+            <div id="how">
+                <h3 class="mid-title">HOW IT WORKS</h3>
+                <br>
+                <ol>
+                    <li>You select the package of your choice</li>
+                    <br>
+                    <li>You Provide Help within 24hours</li>
+                    <br>
+                    <li>You select the package of your choice</li>
+                    <br>
+                    <li>You select the package of your choice</li>
+                </ol>
+            </div>
+
+            <div id="packages">
+                <h3 class="mid-title">PACKAGES</h3>
+                <br>
+                    <div class="row">
+                        <div class="col-md-4 package-contain">
+                            <h4>BRONZE</h4>
+                            <hr id="hozrow" style = "height: 1px; background: #000">
+                            <p>PH 5000</p>
+                            <p>GH 10000</p>
+                            <p>Duration : 2-7 Days</p>
+                        </div>
+                        <div class="col-md-4 package-contain">
+                            <h4>SILVER</h4>
+                            <hr id="hozrow" style = "height: 1px; background: #000">
+                            <p>PH 1000</p>
+                            <p>GH 20000</p>
+                            <p>Duration : 2-7 Days</p>
+                        </div>
+                        <div class="col-md-4 package-contain">
+                            <h4>GOLD</h4>
+                            <hr id="hozrow" style = "height: 1px; background: #000">
+                            <p>PH 50000</p>
+                            <p>GH 100000</p>
+                            <p>Duration : 2-14 Days</p>
+                        </div>
+                    </div>        
+            </div>
+        </div>
+        <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start making money? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>080-3000-0000</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@bondwealth.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <br>
+        <hr id="hozrow" style = "height: 1px; background: #000">
+        <div id="footer">
+            <div id="footer-contain">
+                <p>&copy; BONDWEALTH 2017</p>
+            </div>
+        </div>
+    </div> <!-- End of pageWrapper-->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
